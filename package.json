@@ -1,0 +1,20 @@
+{
+    "name": "mathi",
+    "version": "0.0.1",
+    "description": "Math Integer, calucrate without error",
+    "main": "./dist-cjs/index.js",
+    "module": "./dist-esm/index.js",
+    "types": "./dist-cjs/index.d.js",
+    "scripts": {
+        "build": "npm run build:cjs && npm run build:esm",
+        "prepublishOnly": "npm run build",
+        "build:cjs": "tsc --project . --module commonjs --outDir ./dist-cjs",
+        "build:esm": "tsc --project . --module esnext --outDir ./dist-esm"
+    },
+    "keywords": [],
+    "author": "tanic",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "^5.2.2"
+    }
+}
