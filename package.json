@@ -1,5 +1,5 @@
 {
-    "name": "mathi",
+    "name": "mathint",
     "version": "0.0.1",
     "description": "Math Integer, calucrate without error",
     "main": "./dist-cjs/index.js",
